@@ -30,11 +30,21 @@ class App extends Component {
     const data = this.state.wordFrequency.sort((a,b)=>b[1]-a[1]).slice(0,5)
     console.log(data)
     // your code here
-    const linearScale = d3.scaleLinear().domain([0,100]).range([0,500])
+    const xScaleGenerator = d3.scaleLinear().domain([0,100]).range([0, 2000])
+    const fontSizeGenerator = d3.scaleLinear().domain([0,100]).range([0,500])
 
-    for (const word of data) {
+    d3.select("svg").selectAll("text").data(data)
+      .join(
+        enter => enter.append("text").text((d) => d[0])
+                      .attr("x", (d) => xScaleGenerator(d[1]))
+                      .attr("y", 75)
+                      .attr("font-size", 0)
+                      //.attr("text-anchor", "middle")
+                      .transition().duration(2500).delay((d,i) => i*500).attr("font-size", (d,i) => fontSizeGenerator(d[1]))
 
-    }
+        //update => update.attr("x", (d) => xScaleGenerator(d[1]))
+      )
+
       
 
     
