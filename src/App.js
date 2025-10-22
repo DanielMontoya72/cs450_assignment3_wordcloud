@@ -40,9 +40,11 @@ class App extends Component {
                       .attr("y", 75)
                       .attr("font-size", 0)
                       //.attr("text-anchor", "middle")
-                      .transition().duration(2500).delay((d,i) => i*500).attr("font-size", (d,i) => fontSizeGenerator(d[1]))
+                      .transition().duration(2500).delay((d,i) => i*500).attr("font-size", (d,i) => fontSizeGenerator(d[1])),
 
-        //update => update.attr("x", (d) => xScaleGenerator(d[1]))
+        update => update.attr("x", (d) => xScaleGenerator(d[1]))
+                        .attr("y", 75)
+                        .transition().duration(2500).delay((d,i) => i*500).attr("font-size", (d,i) => fontSizeGenerator(d[1]))
       )
 
       
