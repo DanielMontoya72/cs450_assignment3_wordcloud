@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cs450_assignment3_wordcloud/static/css/main.1dfa595e.css",
+    "main.js": "/cs450_assignment3_wordcloud/static/js/main.e575be8f.js",
+    "static/js/453.da336435.chunk.js": "/cs450_assignment3_wordcloud/static/js/453.da336435.chunk.js",
+    "index.html": "/cs450_assignment3_wordcloud/index.html",
+    "main.1dfa595e.css.map": "/cs450_assignment3_wordcloud/static/css/main.1dfa595e.css.map",
+    "main.e575be8f.js.map": "/cs450_assignment3_wordcloud/static/js/main.e575be8f.js.map",
+    "453.da336435.chunk.js.map": "/cs450_assignment3_wordcloud/static/js/453.da336435.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dfa595e.css",
+    "static/js/main.e575be8f.js"
+  ]
+}
